@@ -711,7 +711,7 @@ const pdfGenerationController = asyncHandler(async (req, res) => {
             italics: true,
           },
           {
-            text: "Copyright © Rise & Thrive Global",
+            text: "Copyright © Ventura eLearning Global",
             fontSize: 15,
             //lineHeight: 1,
             color: "#FFFFFF",
@@ -1665,7 +1665,7 @@ const pdfGenerationController = asyncHandler(async (req, res) => {
                     // absolutePosition: { x: 0, y: 0 },
                   },
                   {
-                    text: "Copyright © Rise & Thrive Global",
+                    text: "Copyright © Ventura eLearning Global",
                     style: "footer",
                     margin: [23, 13, 0, 0],
                   },

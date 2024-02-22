@@ -158,7 +158,7 @@ const userReportSave = asyncHandler(async (req, res) => {
     let timeStampAfter = generateExpirationTimestamp(48);
     let emailResult = await emailSend({
       message: {
-        from: "Rise & Thrive <sagarmp7731@gmail.com>", //  this   is actually see in result mail you can check it
+        from: "Ventura eLearning Global <sagarmp7731@gmail.com>", //  this   is actually see in result mail you can check it
         to: `${user[0].username} <${req.body.email}>`, // list of receivers
         subject: "Your AstroValues Alignment Assessment Report Is Ready!",
         template: "emailReport",

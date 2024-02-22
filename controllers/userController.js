@@ -36,7 +36,7 @@ const registerUser = asyncHandler(async (req, res) => {
   if (user) {
     let result = await emailSend({
       message: {
-        from: "Rise & Thrive <sagarmp7731@gmail.com>", //  this   is actually see in result mail you can check it
+        from: "Ventura eLearning Global <sagarmp7731@gmail.com>", //  this   is actually see in result mail you can check it
         to: `${user.username} <${user.email}>`, // list of receivers
         subject:
           "Embark on a Journey of Self-Discovery with the AstroValues Alignment Assessment!",
@@ -293,7 +293,7 @@ const forgetPassWordMail = asyncHandler(async (req, res) => {
     console.log("resolve3");
     let result = await emailSend({
       message: {
-        from: "Rise & Thrive <sagarmp7731@gmail.com>", //  this   is actually see in result mail you can check it
+        from: "Ventura eLearning Global <sagarmp7731@gmail.com>", //  this   is actually see in result mail you can check it
         to: `${user.username} <${req.body.email}>`, // list of receivers
         subject: "Password Reset Link - Valid for 3 Minutes Only",
         template: "emailForgetPassword",
